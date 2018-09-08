@@ -7,10 +7,56 @@ https://v18.proteinatlas.org/humanproteome/proteinclasses(version of 2018-09-08)
 https://v17.proteinatlas.org/humanproteome/proteinclasses
 https://v16.proteinatlas.org/humanproteome/proteinclasses
 ...
+
 ```
 
-## 1. Fetch up-to-date proteinclasses
+# Example of protein class(catalog)
 
+```bash
+$ python query.py -g PIM1
+Enzymes
+#ENZYME proteins
+##Transferases
+#Kinases
+##CAMK Ser or Thr protein kinases
+##MEMSAT-SVM predicted membrane proteins
+##SCAMPI predicted membrane proteins
+##SPOCTOPUS predicted membrane proteins
+Predicted intracellular proteins
+Cancer-related genes
+#Candidate cancer biomarkers
+#COSMIC somatic mutations in cancer genes
+##COSMIC Somatic Mutations
+##COSMIC Translocations
+Mapped to UniProt SWISS-PROT
+#UniProt - Evidence at protein level
+#########################################################
+Cancer-related genes, Enzymes, Predicted intracellular proteins
+```
+
+# Example of Gene synonym
+
+```bash
+$ python query.py -g PKN1 -i "Gene synonym"
+Enzymes
+#ENZYME proteins
+##Transferases
+#Kinases
+##AGC Ser or Thr protein kinases
+##MEMSAT-SVM predicted membrane proteins
+##SPOCTOPUS predicted membrane proteins
+Predicted intracellular proteins
+Mapped to UniProt SWISS-PROT
+#UniProt - Evidence at protein level
+Protein evidence (Kim et al 2014)
+Protein evidence (Ezkurdia et al 2014)
+#########################################################
+DBK, MGC46204, PAK1, PKN, PRK1, PRKCL1
+```
+
+# Install and Run
+
+## 1. Fetch up-to-date proteinclasses
 
 
 ### 1.1 Usage
